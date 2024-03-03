@@ -1,0 +1,5 @@
+steps:
+- name: "gcr.io/cloud_builders/docker"
+  args: ["build", "-t", "gcr.io/sunlit-charge-416012/first_app", "."]
+- name: "gcr.io/cloud_builders/docker"
+  args: ["push", "-t", "gcr.io/sunlit-charge-416012/first_app"]
